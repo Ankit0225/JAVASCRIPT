@@ -13,8 +13,9 @@ function outer(arg1) {
     // return 10
 }
 
-let x = outer('param1' )
+let x = outer('param1', 11 )
 
 //type of x == 'function'
+//x
 
 x('param2')
