@@ -12,4 +12,4 @@ console.log('' == false) // true, both typecast to 0
 //this doesn't hold good for abstract equality
 // a = b, b = c ... impplies that  ... a = c 
 
-console.log([1,2] == [1,2]) // false
+console.log([1,2] == [1,2]) // false 
