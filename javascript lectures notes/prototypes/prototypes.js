@@ -46,18 +46,23 @@ console.log(fun.__proto__ == Function.prototype)
 
 // Ans It is a template or blueprint
 
+console.log(str.charAt(5))
+console.log(typeof str.charAt) // yeh function hai
 
+let str2 = "Ankit Maurya"
+console.log(str.charAt == str2.charAt) 
 
+str.charAt = function () { return 'Y' } //does not make any difference 
+                                        //  in str.charAt
 
+String.prototype.charAt = function () { return 'Y' }
+console.log(str.charAt(2))
 
+// String.prototype contians all default string functions
+// like charAt, indexOf, substring, slice etc
 
-
-
-
-
-
-
-
-
-
-
+Array.prototype.joinOriginal = Array.prototype.join
+Array.prototype.join = function (){
+    console.log('join called on', this)
+    return this.joinOriginal(...arguments)
+}
