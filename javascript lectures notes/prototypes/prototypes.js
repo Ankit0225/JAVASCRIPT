@@ -74,5 +74,5 @@ Array.prototype.join = function (){
 *  joinOriginal: function(){},
 *  join: function () { our fun },
 *  ....
-* }
+* } 
 */
