@@ -1,3 +1,4 @@
+// 1
 function fakedownload(done) {
     setTimeout(function () {
         let downloadedData = "Some data we ripped of the interwebs"
@@ -11,7 +12,7 @@ fakedownload(function (data) {
     console.log(data)
     
 })
-
+// 2
 function fakedownloadPromise() {
     return new Promise(function (resolve, reject) {
 
@@ -29,7 +30,7 @@ fakedownloadPromise().then(function (data) {
     console.log(data)
     
 })
-
+// 3
 function fakedownloadPromise(correct) {
     return new Promise(function (resolve, reject) {
 
@@ -55,7 +56,7 @@ fakedownloadPromise(false).then(function (data) {
   console.log(error)
 })
 
-
+// 4
 function fakedownloadPromise(correct) {
     return new Promise(function (resolve, reject) {
 
