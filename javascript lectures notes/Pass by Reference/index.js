@@ -1,6 +1,4 @@
-var quiditchwinners = {
-    "Harry" , "Ron" , "Hermoine"
-} 
+var quiditchwinners = "Harry potter"; 
  
   
 
