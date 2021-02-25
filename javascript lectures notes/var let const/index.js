@@ -58,7 +58,7 @@ beta();
 console.log('');
 
 const myconst = 10;            
-function beta(){
+function gamma(){
     const myconst = 12;
     if (true){
         const myconst = 31;
@@ -71,7 +71,7 @@ function beta(){
     }
     console.log(myconst);   // line 61
 }
-beta();
+gamma();
 
 // let and const have block scope
 // var has entire scope hence it prints the latest value
