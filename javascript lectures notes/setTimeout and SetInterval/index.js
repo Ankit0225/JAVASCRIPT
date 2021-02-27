@@ -43,7 +43,7 @@ setInterval(function () {
 
 // using predefined function
 var myfun = function () {
-    console.log("Th Run after 1 sec ")
+    console.log("This Run after 1 sec ")
 }
 setInterval(myfun, 1000);
 
