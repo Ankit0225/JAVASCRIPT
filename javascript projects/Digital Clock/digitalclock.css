@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans' , sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(90deg, #333, #888, #444, #000);
+    animation: animate 10s ease-in-out infinite;
+    background-size: 500% 500%;
+}
+@keyframes animate{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+#clock h2{
+    position: relative;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+#clock #time{
+    display: flex;
+}
+#clock #time div{
+    position: relative;
+    margin: 0 15px;
+    -webkit-box-reflect: below 15px linear-gradient(transparent, #0006);
+}
+#clock #time div span{
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 100px;
+    background-color: #2196f9;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .3);
+}
+
+#clock #time div span:nth-child(2){
+    height: 50px;
+    font-size: 1.3em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    box-shadow: none;
+    background-color: #127fd6;
+    text-transform: uppercase;
+}
+#clock #time div:last-child span{
+    background-color: #ff006a;
+}
+#clock #time div:last-child span:nth-child(2){
+    background-color: #ec0068;
+}
