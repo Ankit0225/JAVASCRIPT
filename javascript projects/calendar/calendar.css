@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(calendar.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.calendar{
+    position: relative;
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+     text-align: center;
+    -webkit-box-reflect: below 2px linear-gradient(transparent , #0003);
+}
+
+.calendar #monthname{
+    position: relative;
+    padding: 10px 20px;
+    background: #00fe4a;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.calendar #day{
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #888;
+
+}
+.calendar #daynum{
+    margin-top: 15px;
+    line-height: 1.4em;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #000;
+}
+.calendar #year{
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #000;
+}
