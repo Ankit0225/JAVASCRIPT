@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.keys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+   min-height: 100vh;
+}
+.key{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #00fe5a;
+    color: #fff;
+    font-size: 30px;
+    transition: 0.3s;
+    margin: 5px;
+}
+.sound{
+    text-transform: uppercase;
+}
+kbd{
+    display: block;
+    font-size: 40px;
+}
+.playing{
+    transform: scale(1.1);
+    border-color: 4px salmon;
+}
