@@ -1,0 +1,53 @@
+:root {
+    --speed: 3;
+}
+body{
+    background-color: linear-gradient(#000,#fff,#333,#999);
+}
+.machine{
+    background-color: brown;
+    border: dashed pink 3px;
+    height: 400px;
+    width: 1000px;
+    margin: 50px;
+ 
+    display: flex;
+}
+#input{
+    font-size: 30pt;
+    margin-left: 10px;
+    width: 135px;
+}
+#spin{
+    width: 135px;
+    font-size: 30pt;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.slot{
+    height: 300px;
+    width: 330px;
+    margin: 40px;
+    background-color: aqua;
+    border: solid greenyellow 5px;
+    text-align: center;
+    font-size: 180px;
+    line-height: 300px;
+    overflow: hidden;
+    
+}
+.slot .go {
+
+    animation-name: slotspin;
+    animation-iteration-count: infinite;
+    animation-duration: calc(1s / var(--speed));
+}
+
+@keyframes slotspin {
+    0% {
+        transform: translateY(-260px);
+    }
+    100%{
+        transform: translateY(260px);
+    }
+}
