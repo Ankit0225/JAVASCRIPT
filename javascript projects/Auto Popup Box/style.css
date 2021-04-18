@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alice',sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+.popup{
+    position: fixed;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.contentbox{
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 0 7px 17px rgba(0, 0, 0, 0.4);
+}
