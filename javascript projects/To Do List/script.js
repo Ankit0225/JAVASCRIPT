@@ -15,7 +15,7 @@ function addtask() {
            listitem.toggleClass('done')
        })
         listedtask.append(listitem)
-        newtask.val('')
+        newtask.val('') 
         togglebuttons()
 }
 
